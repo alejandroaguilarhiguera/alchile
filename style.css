@@ -402,7 +402,7 @@ q {
   max-width: 1000px;
   display: grid;
   grid-template-columns: 1fr;
-  place-items: center;
+  
   
 }
 
@@ -418,6 +418,12 @@ q {
 .c-map__grid-child {
   display: grid;
   place-items: center;
+}
+
+.c-map__text-containter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 /* --- Footer --- */
 .c-footer {
@@ -452,6 +458,7 @@ q {
   grid-auto-flow: row;
   grid-gap: 16px;
   padding-inline-start: 0px;
+  
 }
 
 .c-footer__grid-item {
