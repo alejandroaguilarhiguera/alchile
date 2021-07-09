@@ -63,6 +63,9 @@ h3 {
   }
 }
 
+h6 {
+  margin: 0px;
+}
 .button--primary {
   /* Rectangulo*/
   background-color: var(--orange);
@@ -208,7 +211,7 @@ h3 {
   top: 0px;
   z-index: 2;
 }
-/* Hero Menu */
+/*  Menu */
 .c-menu {
   border: 8px var(--green);
   border-left-width: 8px;
@@ -233,11 +236,19 @@ h3 {
   padding: 16px;
 }
 
+.c-menu_tabs {
+  font-family: var(--font-family);
+}
 /* Style the tab */
 .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
+  
   background-color: #f1f1f1;
+  
+    position: sticky;
+    top: 0px;
+    z-index: 9;
+  
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -249,6 +260,7 @@ h3 {
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
+  font-family: var(--font-family);
 }
 
 /* Change background color of buttons on hover */
@@ -258,16 +270,58 @@ h3 {
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #487018;
+  background-color: var(--white);
+  color: var(--green);
+  box-shadow: inset 0px 4px 0px #487018;
+  font-weight: 800;
+
+  
 }
 
 /* Style the tab content */
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  border: 1px solid #ccc;
+  border: 0px solid #ccc;
   border-top: none;
   background-color: var(--white);
+  
+}
+
+.c-menu__option-description {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+}
+
+.c-menu__grid-options {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 24px;
+ 
+}
+
+.c-menu-option {
+  position: relative;
+}
+.c-menu__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 16px;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .c-menu__grid-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+}
+
+.c-menu__option-img {
+  width: 105px; 
+  height: 105px;
 }
 /**
 * covers will have some large text in them. Let’s position that bottom-left.
@@ -324,12 +378,12 @@ h3 {
 
 /* Position the "next button" to the right */
 .c-slideshow__next {
-  right: -6%;
+  right: -16px;
   margin-top: 64px;
 }
 
 .c-slideshow__prev {
-  left: -6%;
+  left: -16px;
   margin-top: 64px;
 }
 @media screen and (min-width: 800px) {
@@ -499,7 +553,7 @@ q {
   font-size: 100%;
   font-weight: bold;
   margin-left: 0px;
-  color: ##acaaaa;
+  color: #acaaaa;
 }
 
 @media screen and (min-width: 648px) {
@@ -556,6 +610,9 @@ ul::before {
   margin-bottom: 72px;
 }
 
+.pt-3 {
+ padding-top: 0px;
+}
 .pt-4 {
   padding-top: 40px;
 }
@@ -566,4 +623,5 @@ ul::before {
 .center {
   display: grid;
   place-items: center;
+}
 }
