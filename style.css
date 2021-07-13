@@ -618,6 +618,9 @@ ul::before {
 /* --- Footer --- */
 
 /*** ____________-SETTINGS ****/
+.mb-0 {
+  margin-bottom: 0px;
+}
 .mb-2 {
   margin-bottom: 16px;
 }
