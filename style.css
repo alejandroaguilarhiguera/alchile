@@ -239,6 +239,11 @@ h6 {
 .c-menu_tabs {
   font-family: var(--font-family);
 }
+@media screen and (min-width: 1280px) {
+  .c-menu_tabs {
+    font-size: 20px;
+  }
+}
 /* Style the tab */
 .tab {
   overflow: hidden;
@@ -261,6 +266,12 @@ h6 {
   padding: 14px 16px;
   transition: 0.3s;
   font-family: var(--font-family);
+  color: rgba(74, 106, 36, 0.49);
+}
+@media screen and (min-width: 1280px) {
+  .tab button {
+    font-size: 20px;
+  }
 }
 
 /* Change background color of buttons on hover */
@@ -322,6 +333,18 @@ h6 {
 .c-menu__option-img {
   width: 105px; 
   height: 105px;
+}
+@media screen and (min-width: 1280px) {
+  .c-menu__option-img {
+    width: 221px; 
+    height: 221px;
+  }
+}
+
+.c-menu__option-price-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
 }
 /**
 * covers will have some large text in them. Let’s position that bottom-left.
