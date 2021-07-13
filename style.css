@@ -26,6 +26,10 @@
   --medida5: 40px;
 }
 /*** __________________ELEMENTS ____________****/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -636,8 +640,12 @@ ul::before {
   margin-bottom: 72px;
 }
 
+.pb-3 {
+  padding-bottom: 32px;
+ }
+
 .pt-3 {
- padding-top: 0px;
+ padding-top: 32px;
 }
 .pt-4 {
   padding-top: 40px;
@@ -649,5 +657,4 @@ ul::before {
 .center {
   display: grid;
   place-items: center;
-}
 }

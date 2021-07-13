@@ -27,12 +27,12 @@
                     <p class="mb-3 c-hero__copy">Order the best Mexican Tacos in Dallas</p>
                     <div>
                         <button class="button--primary">Order Online</button>
-                        <button class="button--secondary">See our menu</button>
+                        <a href="#menu" > <button class="button--secondary">See our menu</button></a>
                     </div>
                 </div>
             </div>
             <picture class="c-hero__picture">
-                <source media="(min-width: 650px)" srcset="assets/tacos-alchile.png">
+                <source media="(min-width: 650px)" srcset="assets/Hero.png">
 
                 <source media="(min-width: 320px)" src="assets/tacos-dallas-backgraund.png">
                 <img src="assets/tacos-dallas-backgraund.png" alt="movil" class="c-hero__backgraund-image">
@@ -51,11 +51,10 @@
         <div class="c-slideshow-container">
             <h2 class="mb-4" style="text-align: center;">What our customers say!</h2>
             <!-- Full-width slides/quotes -->
-            <div class="c-slideshow__mySlides" >
+            <div class="c-slideshow__mySlides">
                 <div class="c-slideshow__autor">
 
-                    <img src="assets/googleavatar.webp" alt="Avatar"
-                        class="avatar" style="width: 56px; height: 56px; ">
+                    <img src="assets/googleavatar.webp" alt="Avatar" class="avatar" style="width: 56px; height: 56px; ">
                     <div class="mb-2">
                         <p class="c-slideshow__author">Savio Adattel</p>
                         <span class="fa fa-star checked" style="color: var(--orange);"></span>
@@ -69,8 +68,10 @@
                 <div class="c-slideshow-card">
                     <q>We have been seeking some yummy Mexican food place and we found it !!!
 
-                        Al Chile does not disappoint, loved the pastor, camera, tripa and Tinga... so much that we over-ate. Ricardo is an asset of an employee and was patient to explain what each meat was and the taste.
-                        
+                        Al Chile does not disappoint, loved the pastor, camera, tripa and Tinga... so much that we
+                        over-ate. Ricardo is an asset of an employee and was patient to explain what each meat was and
+                        the taste.
+
                         Kudos to Al chile and Riccardo</q>
                 </div>
             </div>
@@ -78,8 +79,7 @@
             <div class="c-slideshow__mySlides">
                 <div class="c-slideshow__autor">
 
-                    <img src="assets/yelp-avatar-1.png" alt="Avatar"
-                        class="avatar" style="width: 56px; height: 56px; ">
+                    <img src="assets/yelp-avatar-1.png" alt="Avatar" class="avatar" style="width: 56px; height: 56px; ">
                     <div class="mb-2">
                         <p class="c-slideshow__author">Stephanie G.</p>
                         <span class="fa fa-star checked" style="color: var(--orange);"></span>
@@ -91,7 +91,11 @@
                     </div>
                 </div>
                 <div class="c-slideshow-card">
-                    <q>We wanted tacos on a Sunday and it was getting late.. per usual I turn to Yelp to find good ones.. and this did it! We were nervous having never tried it but these tacos were on point!!! My hubby ordered a fajita torta which was loaded and had ham as well. He also liked the horchata he ordered.. red salsa was  as well! Food was ready within 15 mins of ordering. I do recommend to call in order had tried via grub hub and I ended up having to
+                    <q>We wanted tacos on a Sunday and it was getting late.. per usual I turn to Yelp to find good
+                        ones.. and this did it! We were nervous having never tried it but these tacos were on point!!!
+                        My hubby ordered a fajita torta which was loaded and had ham as well. He also liked the horchata
+                        he ordered.. red salsa was as well! Food was ready within 15 mins of ordering. I do recommend to
+                        call in order had tried via grub hub and I ended up having to
                         Call to make sure it was received. Small hole in the wall but so worth it! Definitely try!</q>
                 </div>
             </div>
@@ -99,8 +103,7 @@
             <div class="c-slideshow__mySlides">
                 <div class="c-slideshow__autor">
 
-                    <img src="assets/yelp-avatar-1.png" alt="Avatar"
-                        class="avatar" style="width: 56px; height: 56px; ">
+                    <img src="assets/yelp-avatar-1.png" alt="Avatar" class="avatar" style="width: 56px; height: 56px; ">
                     <div class="mb-2">
                         <p class="c-slideshow__author">Jennifer T</p>
                         <span class="fa fa-star checked" style="color: var(--orange);"></span>
@@ -129,12 +132,12 @@
                         that .
                         The food was great, the service was great, and most importantly the Horchata was incredible!</q>
                 </div>
-        
-        </div>
 
-        <!-- Next/prev buttons -->
-        <a class="c-slideshow__prev " onclick="plusSlides(-1)">&#10094;</a>
-        <a class="c-slideshow__next " onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <!-- Next/prev buttons -->
+            <a class="c-slideshow__prev " onclick="plusSlides(-1)">&#10094;</a>
+            <a class="c-slideshow__next " onclick="plusSlides(1)">&#10095;</a>
         </div>
 
         <!-- Dots/bullets/indicators -->
@@ -144,7 +147,7 @@
             <span class="c-slideshow__dot" onclick="currentSlide(3)"></span>
         </div>
     </section>
-    <section class="o-wrapper o-section__gap" style="padding: 0px;">
+    <section class="o-wrapper o-section__gap" style="padding: 0px;" id="menu">
         <div class="c-menu mb-3 ow">
             <div class="c-menu__title-container">
                 <h2 class="c-menu__title">Our Menu</h2>
@@ -157,154 +160,147 @@
                 <button class="tablinks" onclick="openCity(event, 'Tortas')">Tortas</button>
                 <button class="tablinks" onclick="openCity(event, 'Tostadas')">Tostadas</button>
             </div>
-
+            <div >
             <!-- Tab content -->
             <div id="Tacos" class="tabcontent " style="text-align: center; font-size: 20px; position: sticky;">
                 <h3 style="padding-top: 16px; padding-bottom: 8px;" class="mb-2">Tacos</h3>
-                <div class="c-menu__grid-options" >
+                <div class="c-menu__grid-options">
                     <div class="c-menu-option" style="display: flex;">
-                        <img class="c-menu__option-img" src="assets/tacos-cabeza-dallas.jpg" alt="Tacos de Cabeza Dallas"
-                            >
+                        <img class="c-menu__option-img" src="assets/tacos-cabeza-dallas.jpg"
+                            alt="Tacos de Cabeza Dallas">
                         <div class="c-menu__content">
-                          <div class="c-menu__option-price-container">
-                            <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Cabeza (Masiza y Cachete)</h6>
-                            <span style="color: darkgreen;">1.75</span>
-                         </div>
-                         <!-- Description Hide 
+                            <div class="c-menu__option-price-container">
+                                <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Cabeza
+                                    (Masiza y Cachete)</h6>
+                                <span style="color: darkgreen;">1.75</span>
+                            </div>
+                            <!-- Description Hide 
                          <p class="c-menu__option-description">Carne de res picada del mero cerebro de la baca, un sabor muy sabroso para chuparse los dedos.</p>
                          -->
                         </div>
                     </div>
-                 
+
                     <div class="c-menu-option" style="display: flex;">
-                        <img class="c-menu__option-img" src="assets/taco-lengua-dallas.jpg" alt="Tacos de Lengua Dallas"
-                            >
+                        <img class="c-menu__option-img" src="assets/taco-lengua-dallas.jpg"
+                            alt="Tacos de Lengua Dallas">
                         <div class="c-menu__content">
-                          <div class="c-menu__option-price-container">
-                            <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Lengua (Tonge)</h6>
-                            <span style="color: darkgreen;">2.25</span>
-                         </div>
-                         <!-- Description Hide 
+                            <div class="c-menu__option-price-container">
+                                <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Lengua
+                                    (Tonge)</h6>
+                                <span style="color: darkgreen;">2.25</span>
+                            </div>
+                            <!-- Description Hide 
                          <p class="c-menu__option-description">Carne de res picada del mero cerebro de la baca, un sabor muy sabroso para chuparse los dedos.</p>
                          -->
                         </div>
-                        
+
                     </div>
                     <div class="c-menu-option" style="display: flex;">
-                        <img class="c-menu__option-img" src="assets/fajita-tacos-dallas.jpg" alt="Tacos de Fajita Dallas"
-                            >
+                        <img class="c-menu__option-img" src="assets/fajita-tacos-dallas.jpg"
+                            alt="Tacos de Fajita Dallas">
                         <div class="c-menu__content">
-                          <div class="c-menu__option-price-container">
-                            <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Fajita</h6>
-                            <span style="color: darkgreen;">2.10</span>
-                         </div>
-                         <!-- Description Hide 
+                            <div class="c-menu__option-price-container">
+                                <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Fajita</h6>
+                                <span style="color: darkgreen;">2.10</span>
+                            </div>
+                            <!-- Description Hide 
                          <p class="c-menu__option-description">Carne de res picada del mero cerebro de la baca, un sabor muy sabroso para chuparse los dedos.</p>
                          -->
                         </div>
-                        
+
                     </div>
                     <div class="c-menu-option" style="display: flex;">
-                        <img class="c-menu__option-img" src="assets/tacos-tripa-dallas.jpg" alt="Tacos de Fajita Dallas"
-                            >
+                        <img class="c-menu__option-img" src="assets/tacos-tripa-dallas.jpg"
+                            alt="Tacos de Fajita Dallas">
                         <div class="c-menu__content">
-                          <div class="c-menu__option-price-container">
-                            <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Tripa (Small Instentine)</h6>
-                            <span style="color: darkgreen;">1.90</span>
-                         </div>
-                         <!-- Description Hide 
+                            <div class="c-menu__option-price-container">
+                                <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Tripa (Small
+                                    Instentine)</h6>
+                                <span style="color: darkgreen;">1.90</span>
+                            </div>
+                            <!-- Description Hide 
                          <p class="c-menu__option-description">Carne de res picada del mero cerebro de la baca, un sabor muy sabroso para chuparse los dedos.</p>
                          -->
                         </div>
-                        
+
                     </div>
                     <div class="c-menu-option" style="display: flex;">
-                        <img class="c-menu__option-img" src="assets/al-pastor-tacos-dallas.jpg" alt="Al Pastor Tacos in Dallas Texas"
-                            >
+                        <img class="c-menu__option-img" src="assets/al-pastor-tacos-dallas.jpg"
+                            alt="Al Pastor Tacos in Dallas Texas">
                         <div class="c-menu__content">
-                          <div class="c-menu__option-price-container">
-                            <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Pastor (Pork)</h6>
-                            <span style="color: darkgreen;">1.75</span>
-                         </div>
-                         <!-- Description Hide 
+                            <div class="c-menu__option-price-container">
+                                <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Pastor (Pork)
+                                </h6>
+                                <span style="color: darkgreen;">1.75</span>
+                            </div>
+                            <!-- Description Hide 
                          <p class="c-menu__option-description">Carne de res picada del mero cerebro de la baca, un sabor muy sabroso para chuparse los dedos.</p>
                          -->
                         </div>
-                        
+
                     </div>
                     <div class="c-menu-option" style="display: flex;">
-                        <img class="c-menu__option-img" src="assets/chicken-taco-dallas.jpg" alt="Chicken Tacos in Dallas Texas"
-                            >
+                        <img class="c-menu__option-img" src="assets/chicken-taco-dallas.jpg"
+                            alt="Chicken Tacos in Dallas Texas">
                         <div class="c-menu__content">
-                          <div class="c-menu__option-price-container">
-                            <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Pollo (Chicken)</h6>
-                            <span style="color: darkgreen;">1.65</span>
-                         </div>
-                         <!-- Description Hide 
+                            <div class="c-menu__option-price-container">
+                                <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Pollo
+                                    (Chicken)</h6>
+                                <span style="color: darkgreen;">1.65</span>
+                            </div>
+                            <!-- Description Hide 
                          <p class="c-menu__option-description">Carne de res picada del mero cerebro de la baca, un sabor muy sabroso para chuparse los dedos.</p>
                          -->
-                        </div> 
+                        </div>
                     </div>
                     <div class="c-menu-option" style="display: flex;">
-                        <img class="c-menu__option-img" src="assets/chorizo-tacos-dallas.jpg" alt="Chicken Tacos in Dallas Texas"
-                            >
+                        <img class="c-menu__option-img" src="assets/chorizo-tacos-dallas.jpg"
+                            alt="Chicken Tacos in Dallas Texas">
                         <div class="c-menu__content">
-                          <div class="c-menu__option-price-container">
-                            <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Chorizo</h6>
-                            <span style="color: darkgreen;">1.75</span>
-                         </div>
-                         <!-- Description Hide 
+                            <div class="c-menu__option-price-container">
+                                <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Chorizo</h6>
+                                <span style="color: darkgreen;">1.75</span>
+                            </div>
+                            <!-- Description Hide 
                          <p class="c-menu__option-description">Carne de res picada del mero cerebro de la baca, un sabor muy sabroso para chuparse los dedos.</p>
                          -->
-                        </div> 
+                        </div>
                     </div>
-                    
+
                 </div>
 
             </div>
 
-            <div id="TacoWithCheasse" class="tabcontent"  style="text-align: center; font-size: 20px; position: sticky;">
+            <div id="TacoWithCheasse" class="tabcontent" style="text-align: center; font-size: 20px; position: sticky;">
                 <h3 style="padding-top: 16px; padding-bottom: 8px;" class="mb-2">Tacos with cheese</h3>
-                <div class="c-menu__grid-options mb-3" >
+                <div class="c-menu__grid-options mb-3">
                     <div class="c-menu-option" style="display: flex;">
                         <!-- 
                         <img class="c-menu__option-img" src="assets/tacos-cabeza-dallas.jpg" alt="Tacos de Cabeza Dallas"
                             >-->
                         <div class="c-menu__content">
-                          <div class="c-menu__option-price-container">
-                            <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Pastorqueso</h6>
-                            <span style="color: darkgreen;">2.35</span>
-                         </div>
-                         <!-- Description Hide 
+                            <div class="c-menu__option-price-container">
+                                <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Pastorqueso
+                                </h6>
+                                <span style="color: darkgreen;">2.35</span>
+                            </div>
+                            <!-- Description Hide 
                          <p class="c-menu__option-description">Carne de res picada del mero cerebro de la baca, un sabor muy sabroso para chuparse los dedos.</p>
                          -->
                         </div>
                     </div>
-                 
+
                     <div class="c-menu-option" style="display: flex;">
                         <!-- 
                         <img class="c-menu__option-img" src="assets/tacos-cabeza-dallas.jpg" alt="Tacos de Cabeza Dallas"
                             >-->
                         <div class="c-menu__content">
-                          <div class="c-menu__option-price-container">
-                            <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Fajiqueso</h6>
-                            <span style="color: darkgreen;">2.45</span>
-                         </div>
-                         <!-- Description Hide 
-                         <p class="c-menu__option-description">Carne de res picada del mero cerebro de la baca, un sabor muy sabroso para chuparse los dedos.</p>
-                         -->
-                        </div>
-                    </div>
-                    <div class="c-menu-option" style="display: flex;">
-                        <!-- 
-                        <img class="c-menu__option-img" src="assets/tacos-cabeza-dallas.jpg" alt="Tacos de Cabeza Dallas"
-                            >-->
-                        <div class="c-menu__content">
-                          <div class="c-menu__option-price-container">
-                            <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Choriqueso</h6>
-                            <span style="color: darkgreen;">2.35</span>
-                         </div>
-                         <!-- Description Hide 
+                            <div class="c-menu__option-price-container">
+                                <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Fajiqueso
+                                </h6>
+                                <span style="color: darkgreen;">2.45</span>
+                            </div>
+                            <!-- Description Hide 
                          <p class="c-menu__option-description">Carne de res picada del mero cerebro de la baca, un sabor muy sabroso para chuparse los dedos.</p>
                          -->
                         </div>
@@ -314,49 +310,67 @@
                         <img class="c-menu__option-img" src="assets/tacos-cabeza-dallas.jpg" alt="Tacos de Cabeza Dallas"
                             >-->
                         <div class="c-menu__content">
-                          <div class="c-menu__option-price-container mb-0">
-                            <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Orden de Birriaqueso</h6>
-                            <span style="color: darkgreen;">9.50</span>
-                         </div>
- 
-                         <p class="c-menu__option-description">4 tacos of birria with cheese</p>
-                         
+                            <div class="c-menu__option-price-container">
+                                <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Choriqueso
+                                </h6>
+                                <span style="color: darkgreen;">2.35</span>
+                            </div>
+                            <!-- Description Hide 
+                         <p class="c-menu__option-description">Carne de res picada del mero cerebro de la baca, un sabor muy sabroso para chuparse los dedos.</p>
+                         -->
                         </div>
                     </div>
-                   
-                    
+                    <div class="c-menu-option" style="display: flex;">
+                        <!-- 
+                        <img class="c-menu__option-img" src="assets/tacos-cabeza-dallas.jpg" alt="Tacos de Cabeza Dallas"
+                            >-->
+                        <div class="c-menu__content">
+                            <div class="c-menu__option-price-container mb-0">
+                                <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Orden de
+                                    Birriaqueso</h6>
+                                <span style="color: darkgreen;">9.50</span>
+                            </div>
+
+                            <p class="c-menu__option-description">4 tacos of birria with cheese</p>
+
+                        </div>
+                    </div>
+
+
                 </div>
-            
+
             </div>
 
             <div id="Quesadillas" class="tabcontent" style="text-align: center; font-size: 20px; position: sticky;">
                 <h3 style="padding-top: 16px; padding-bottom: 8px;" class="mb-2">Quesadillas</h3>
-                <div class="c-menu__grid-options mb-3" >
+                <div class="c-menu__grid-options mb-3">
                     <div class="c-menu-option" style="display: flex;">
                         <!-- 
                         <img class="c-menu__option-img" src="assets/tacos-cabeza-dallas.jpg" alt="Tacos de Cabeza Dallas"
                             >-->
                         <div class="c-menu__content">
-                          <div class="c-menu__option-price-container">
-                            <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Pastor (Pork)</h6>
-                            <span style="color: darkgreen;">7.64</span>
-                         </div>
-                         <!-- Description Hide 
+                            <div class="c-menu__option-price-container">
+                                <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Pastor (Pork)
+                                </h6>
+                                <span style="color: darkgreen;">7.64</span>
+                            </div>
+                            <!-- Description Hide 
                          <p class="c-menu__option-description">Carne de res picada del mero cerebro de la baca, un sabor muy sabroso para chuparse los dedos.</p>
                          -->
                         </div>
                     </div>
-                 
+
                     <div class="c-menu-option" style="display: flex;">
                         <!-- 
                         <img class="c-menu__option-img" src="assets/tacos-cabeza-dallas.jpg" alt="Tacos de Cabeza Dallas"
                             >-->
                         <div class="c-menu__content">
-                          <div class="c-menu__option-price-container">
-                            <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Pollo (Chicken)</h6>
-                            <span style="color: darkgreen;">6.99</span>
-                         </div>
-                         <!-- Description Hide 
+                            <div class="c-menu__option-price-container">
+                                <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Pollo
+                                    (Chicken)</h6>
+                                <span style="color: darkgreen;">6.99</span>
+                            </div>
+                            <!-- Description Hide 
                          <p class="c-menu__option-description">Carne de res picada del mero cerebro de la baca, un sabor muy sabroso para chuparse los dedos.</p>
                          -->
                         </div>
@@ -366,140 +380,154 @@
                         <img class="c-menu__option-img" src="assets/tacos-cabeza-dallas.jpg" alt="Tacos de Cabeza Dallas"
                             >-->
                         <div class="c-menu__content">
-                          <div class="c-menu__option-price-container">
-                            <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Fajita</h6>
-                            <span style="color: darkgreen;">8.12</span>
-                         </div>
-                         <!-- Description Hide 
+                            <div class="c-menu__option-price-container">
+                                <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Fajita</h6>
+                                <span style="color: darkgreen;">8.12</span>
+                            </div>
+                            <!-- Description Hide 
                          <p class="c-menu__option-description">Carne de res picada del mero cerebro de la baca, un sabor muy sabroso para chuparse los dedos.</p>
                          -->
                         </div>
                     </div>
+             </div>
             </div>
             <div id="Tortas" class="tabcontent" style="text-align: center; font-size: 20px; position: sticky;">
-                <h3 style="padding-top: 16px; padding-bottom: 8px;" class="mb-2">Tortas</h3>
-                <div class="c-menu__grid-options mb-3" >
-                    <div class="c-menu-option" style="display: flex;">
-                        <!-- 
+                    <h3 style="padding-top: 16px; padding-bottom: 8px;" class="mb-2">Tortas</h3>
+                    <div class="c-menu__grid-options mb-3">
+                        <div class="c-menu-option" style="display: flex;">
+                            <!-- 
                         <img class="c-menu__option-img" src="assets/tacos-cabeza-dallas.jpg" alt="Tacos de Cabeza Dallas"
                             >-->
-                        <div class="c-menu__content">
-                          <div class="c-menu__option-price-container">
-                            <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Fajita</h6>
-                            <span style="color: darkgreen;">8.99</span>
-                         </div>
-                         <!-- Description Hide 
+                            <div class="c-menu__content">
+                                <div class="c-menu__option-price-container">
+                                    <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Fajita
+                                    </h6>
+                                    <span style="color: darkgreen;">8.99</span>
+                                </div>
+                                <!-- Description Hide 
                          <p class="c-menu__option-description">Carne de res picada del mero cerebro de la baca, un sabor muy sabroso para chuparse los dedos.</p>
                          -->
+                            </div>
                         </div>
-                    </div>
-                 
-                    <div class="c-menu-option" style="display: flex;">
-                        <!-- 
+
+                        <div class="c-menu-option" style="display: flex;">
+                            <!-- 
                         <img class="c-menu__option-img" src="assets/tacos-cabeza-dallas.jpg" alt="Tacos de Cabeza Dallas"
                             >-->
-                        <div class="c-menu__content">
-                          <div class="c-menu__option-price-container">
-                            <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Pastor (Pork)</h6>
-                            <span style="color: darkgreen;">8.59</span>
-                         </div>
-                         <!-- Description Hide 
+                            <div class="c-menu__content">
+                                <div class="c-menu__option-price-container">
+                                    <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Pastor
+                                        (Pork)</h6>
+                                    <span style="color: darkgreen;">8.59</span>
+                                </div>
+                                <!-- Description Hide 
                          <p class="c-menu__option-description">Carne de res picada del mero cerebro de la baca, un sabor muy sabroso para chuparse los dedos.</p>
                          -->
+                            </div>
                         </div>
-                    </div>
-                    <div class="c-menu-option" style="display: flex;">
-                        <!-- 
+                        <div class="c-menu-option" style="display: flex;">
+                            <!-- 
                         <img class="c-menu__option-img" src="assets/tacos-cabeza-dallas.jpg" alt="Tacos de Cabeza Dallas"
                             >-->
-                        <div class="c-menu__content">
-                          <div class="c-menu__option-price-container">
-                            <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Campechana</h6>
-                            <span style="color: darkgreen;">9.59</span>
-                         </div>
-                         <!-- Description Hide 
+                            <div class="c-menu__content">
+                                <div class="c-menu__option-price-container">
+                                    <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">
+                                        Campechana</h6>
+                                    <span style="color: darkgreen;">9.59</span>
+                                </div>
+                                <!-- Description Hide 
                          <p class="c-menu__option-description">Carne de res picada del mero cerebro de la baca, un sabor muy sabroso para chuparse los dedos.</p>
                          -->
-                        </div>
-                    </div>
-            </div>
-            <div id="Tostadas" class="tabcontent" style="text-align: center; font-size: 20px; position: sticky;">
-                <h3 style="padding-top: 16px; padding-bottom: 8px;" class="mb-2">Tostadas</h3>
-                <div class="c-menu__grid-options mb-3" >
-                    <div class="c-menu-option" style="display: flex;">
-                        <!-- 
-                        <img class="c-menu__option-img" src="assets/tacos-cabeza-dallas.jpg" alt="Tacos de Cabeza Dallas"
-                            >-->
-                        <div class="c-menu__content">
-                          <div class="c-menu__option-price-container">
-                            <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Tinga</h6>
-                            <span style="color: darkgreen;">5.89</span>
-                         </div>
-                         <!-- Description Hide 
-                         <p class="c-menu__option-description">Carne de res picada del mero cerebro de la baca, un sabor muy sabroso para chuparse los dedos.</p>
-                         -->
-                        </div>
-                    </div>
-                 
-                    <div class="c-menu-option" style="display: flex;">
-                        <!-- 
-                        <img class="c-menu__option-img" src="assets/tacos-cabeza-dallas.jpg" alt="Tacos de Cabeza Dallas"
-                            >-->
-                        <div class="c-menu__content">
-                          <div class="c-menu__option-price-container">
-                            <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Pollo (Chicken)</h6>
-                            <span style="color: darkgreen;">5.59</span>
-                         </div>
-                         <!-- Description Hide 
-                         <p class="c-menu__option-description">Carne de res picada del mero cerebro de la baca, un sabor muy sabroso para chuparse los dedos.</p>
-                         -->
-                        </div>
-                    </div>
-                    <div class="c-menu-option" style="display: flex;">
-                        <!-- 
-                        <img class="c-menu__option-img" src="assets/tacos-cabeza-dallas.jpg" alt="Tacos de Cabeza Dallas"
-                            >-->
-                        <div class="c-menu__content">
-                          <div class="c-menu__option-price-container">
-                            <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Fajita</h6>
-                            <span style="color: darkgreen;">6.59</span>
-                         </div>
-                         <!-- Description Hide 
-                         <p class="c-menu__option-description">Carne de res picada del mero cerebro de la baca, un sabor muy sabroso para chuparse los dedos.</p>
-                         -->
+                            </div>
                         </div>
                     </div>
             </div>
-             <picture>
+            <div id="Tostadas" class="tabcontent"
+                        style="text-align: center; font-size: 20px; position: sticky;">
+                        <h3 style="padding-top: 16px; padding-bottom: 8px;" class="mb-2">Tostadas</h3>
+                        <div class="c-menu__grid-options mb-3">
+                            <div class="c-menu-option" style="display: flex;">
+                                <!-- 
+                        <img class="c-menu__option-img" src="assets/tacos-cabeza-dallas.jpg" alt="Tacos de Cabeza Dallas"
+                            >-->
+                                <div class="c-menu__content">
+                                    <div class="c-menu__option-price-container">
+                                        <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Tinga
+                                        </h6>
+                                        <span style="color: darkgreen;">5.89</span>
+                                    </div>
+                                    <!-- Description Hide 
+                         <p class="c-menu__option-description">Carne de res picada del mero cerebro de la baca, un sabor muy sabroso para chuparse los dedos.</p>
+                         -->
+                                </div>
+                            </div>
+
+                            <div class="c-menu-option" style="display: flex;">
+                                <!-- 
+                        <img class="c-menu__option-img" src="assets/tacos-cabeza-dallas.jpg" alt="Tacos de Cabeza Dallas"
+                            >-->
+                                <div class="c-menu__content">
+                                    <div class="c-menu__option-price-container">
+                                        <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Pollo
+                                            (Chicken)</h6>
+                                        <span style="color: darkgreen;">5.59</span>
+                                    </div>
+                                    <!-- Description Hide 
+                         <p class="c-menu__option-description">Carne de res picada del mero cerebro de la baca, un sabor muy sabroso para chuparse los dedos.</p>
+                         -->
+                                </div>
+                            </div>
+                            <div class="c-menu-option" style="display: flex;">
+                                <!-- 
+                        <img class="c-menu__option-img" src="assets/tacos-cabeza-dallas.jpg" alt="Tacos de Cabeza Dallas"
+                            >-->
+                                <div class="c-menu__content">
+                                    <div class="c-menu__option-price-container">
+                                        <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">
+                                            Fajita</h6>
+                                        <span style="color: darkgreen;">6.59</span>
+                                    </div>
+                                    <!-- Description Hide 
+                         <p class="c-menu__option-description">Carne de res picada del mero cerebro de la baca, un sabor muy sabroso para chuparse los dedos.</p>
+                         -->
+                                </div>
+                            </div>
+                        </div>
+                        
+            </div>
+            <picture style="display: flex;">
                 <source media="(min-width: 650px)" srcset="assets/cintillo-desktop.png">
                 <img src="assets/cintillo.png" alt="cintillo mexicano" style="width: 100%;">
-             </picture>
+            </picture>
         </div>
+          </div>
     </section>
-    <section >
+    <section>
         <div class="c-menu__title-container mb-3">
             <h2 class="c-menu__title">Our Location </h2>
         </div>
         <div>
             <div class="o-wrapper center o-section__gap">
                 <div class="c-map__grid">
-                <div class="c-map__grid-child">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3355.9968632118425!2d-96.85922658481893!3d32.73927398098345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e9a40abb71513%3A0x242ad3b0060b80d7!2s643%20S%20Hampton%20Rd%2C%20Dallas%2C%20TX%2075208%2C%20EE.%20UU.!5e0!3m2!1ses-419!2smx!4v1625808804275!5m2!1ses-419!2smx" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-                <div class=" c-map__text-containter" >
-                    <h3 class="mb-2">Eat here or Order for pick up at this location</h3>
-                    <p class="mb-2">2643 S Hampton Rd, Dallas, TX 75224, Estados Unidos</p>
-                    <div style="display: flex;">
-                      <button class="button--primary" style="margin-right:8px">
-                        Make a call
-                      </button>
-                      <button class="button--secondary">
-                        Get Directions
-                      </button>
-                </div>
+                    <div class="c-map__grid-child">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3355.9968632118425!2d-96.85922658481893!3d32.73927398098345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e9a40abb71513%3A0x242ad3b0060b80d7!2s643%20S%20Hampton%20Rd%2C%20Dallas%2C%20TX%2075208%2C%20EE.%20UU.!5e0!3m2!1ses-419!2smx!4v1625808804275!5m2!1ses-419!2smx"
+                            width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div class=" c-map__text-containter">
+                        <h3 class="mb-2">Eat here or Order for pick up at this location</h3>
+                        <p class="mb-2">2643 S Hampton Rd, Dallas, TX 75224, Estados Unidos</p>
+                        <div style="display: flex;">
+                            <button class="button--primary" style="margin-right:8px">
+                                Make a call
+                            </button>
+                            <button class="button--secondary">
+                                Get Directions
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
-         </div>
         </div>
     </section>
     <footer class="c-footer pt-4">
@@ -516,7 +544,7 @@
                     <ul class="c-footer__ul--row mb-4 " aria-label="ACTIONS:">
 
                         <li><a href="#">Order online</a></li>
-                        <li><a href="#">See our menu</a></li>
+                        <li><a href="#menu">See our menu</a></li>
                         <li><a href="#">Get Directions</a></li>
                         <li><a href="#">Make a Call</a></li>
 
@@ -612,6 +640,43 @@
             document.getElementById(cityName).style.display = "block";
             evt.currentTarget.className += " active";
         }
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('a[href*=#]').bind('click', function (e) {
+                e.preventDefault(); // prevent hard jump, the default behavior
+
+                var target = $(this).attr("href"); // Set the target as variable
+
+                // perform animated scrolling by getting top-position of target-element and set it as scroll target
+                $('html, body').stop().animate({
+                    scrollTop: $(target).offset().top
+                }, 600, function () {
+                    location.hash = target; //attach the hash (#jumptarget) to the pageurl
+                });
+
+                return false;
+            });
+        });
+
+        $(window).scroll(function () {
+            var scrollDistance = $(window).scrollTop();
+
+            // Show/hide menu on scroll
+            //if (scrollDistance >= 850) {
+            //		$('nav').fadeIn("fast");
+            //} else {
+            //		$('nav').fadeOut("fast");
+            //}
+
+            // Assign active class to nav links while scolling
+            $('.page-section').each(function (i) {
+                if ($(this).position().top <= scrollDistance) {
+                    $('.navigation a.active').removeClass('active');
+                    $('.navigation a').eq(i).addClass('active');
+                }
+            });
+        }).scroll();
     </script>
 </body>
 
