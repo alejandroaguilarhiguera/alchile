@@ -154,7 +154,7 @@
             </div>
             <!-- Tab links -->
             <div class="tab">
-                <button class="tablinks c-menu_tabs" onclick="openCity(event, 'Tacos')">Tacos</button>
+                <button class="tablinks c-menu_tabs active" onclick="openCity(event, 'Tacos')">Tacos</button>
                 <button class="tablinks" onclick="openCity(event, 'TacoWithCheasse')">Tacos with cheese</button>
                 <button class="tablinks" onclick="openCity(event, 'Quesadillas')">Quesadillas</button>
                 <button class="tablinks" onclick="openCity(event, 'Tortas')">Tortas</button>
@@ -162,7 +162,7 @@
             </div>
             <div >
             <!-- Tab content -->
-            <div id="Tacos" class="tabcontent " style="text-align: center; font-size: 20px; position: sticky;">
+            <div id="Tacos" class="tabcontent " style="text-align: center; font-size: 20px; position: sticky; display: block;">
                 <h3 style="padding-top: 16px; padding-bottom: 8px;" class="mb-2">Tacos</h3>
                 <div class="c-menu__grid-options">
                     <div class="c-menu-option" style="display: flex;">
@@ -186,7 +186,7 @@
                         <div class="c-menu__content">
                             <div class="c-menu__option-price-container">
                                 <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Lengua
-                                    (Tonge)</h6>
+                                    (Tongue)</h6>
                                 <span style="color: darkgreen;">2.25</span>
                             </div>
                             <!-- Description Hide 
@@ -215,7 +215,7 @@
                         <div class="c-menu__content">
                             <div class="c-menu__option-price-container">
                                 <h6 style="font-size: 16px; font-family: Fredoka One; margin-bottom: 4px;">Tripa (Small
-                                    Instentine)</h6>
+                                    Intestine)</h6>
                                 <span style="color: darkgreen;">1.90</span>
                             </div>
                             <!-- Description Hide 
@@ -620,14 +620,14 @@
     </script>
 
     <script>
-        function openCity(evt, cityName) {
+     function openCity(evt, cityName) {
             // Declare all variables
             var i, tabcontent, tablinks;
 
             // Get all elements with class="tabcontent" and hide them
             tabcontent = document.getElementsByClassName("tabcontent");
             for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
+                    tabcontent[i].style.display = "none";
             }
 
             // Get all elements with class="tablinks" and remove the class "active"
@@ -641,43 +641,7 @@
             evt.currentTarget.className += " active";
         }
     </script>
-    <script>
-        $(document).ready(function () {
-            $('a[href*=#]').bind('click', function (e) {
-                e.preventDefault(); // prevent hard jump, the default behavior
-
-                var target = $(this).attr("href"); // Set the target as variable
-
-                // perform animated scrolling by getting top-position of target-element and set it as scroll target
-                $('html, body').stop().animate({
-                    scrollTop: $(target).offset().top
-                }, 600, function () {
-                    location.hash = target; //attach the hash (#jumptarget) to the pageurl
-                });
-
-                return false;
-            });
-        });
-
-        $(window).scroll(function () {
-            var scrollDistance = $(window).scrollTop();
-
-            // Show/hide menu on scroll
-            //if (scrollDistance >= 850) {
-            //		$('nav').fadeIn("fast");
-            //} else {
-            //		$('nav').fadeOut("fast");
-            //}
-
-            // Assign active class to nav links while scolling
-            $('.page-section').each(function (i) {
-                if ($(this).position().top <= scrollDistance) {
-                    $('.navigation a.active').removeClass('active');
-                    $('.navigation a').eq(i).addClass('active');
-                }
-            });
-        }).scroll();
-    </script>
+   
 </body>
 
 </html>
