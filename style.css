@@ -345,7 +345,6 @@ h6 {
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin-left: 16px;
   justify-content: center;
 }
 @media screen and (min-width: 768px) {
@@ -358,6 +357,7 @@ h6 {
 .c-menu__option-img {
   width: 105px; 
   height: 105px;
+  margin-right: 16px;
 }
 @media screen and (min-width: 1280px) {
   .c-menu__option-img {
@@ -705,6 +705,8 @@ ul::before {
   display: grid;
   place-items: center;
 }
+
+
 .stroke-text {
   --stroke-color: var(--red);
   --stroke-width: 5px;
