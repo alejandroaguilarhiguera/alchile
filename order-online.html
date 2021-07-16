@@ -38,8 +38,13 @@
 
             <div class="o-wrapper">
                 <img src="assets/logo-alchile.png" alt="Logo" class="c-hero__logo">
-                <div  style="max-width: 1280; margin-left: auto; margin-right: auto;">
-                    <h2 class="mb-4" style="text-align: center; max-width: 800px; margin-right: auto; margin-left: auto;">Are you ready to taste the most yummy tacos in Dallas?</h2>
+                <div class="center" style="max-width: 1280; margin-left: auto; margin-right: auto;">
+                    <h2 class="mb-4 " style="text-align: center; max-width: 800px; margin-right: auto; margin-left: auto; margin-bottom: 8px;">
+                        Are you ready to taste the most succulent tacos in Dallas?
+                    </h2>
+                    <p style="font-size: 24px; margin-bottom: 40px; text-align: center;">
+                        Order from your favorite delivery app.
+                    </p>
                     <div class="c-order-hero__grid">
                         
                             <div class="c-order-hero__grid-child" >
@@ -140,57 +145,28 @@
         <br>
     </footer>
     <!-- actions slides -->
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
+   
 
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("c-slideshow__mySlides");
-            var dots = document.getElementsByClassName("c-slideshow__dot");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace("c-slideshow__active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " c-slideshow__active";
-        }
-    </script>
-
-    <script>
-     function openCity(evt, cityName) {
-            // Declare all variables
-            var i, tabcontent, tablinks;
-
-            // Get all elements with class="tabcontent" and hide them
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none";
-            }
-
-            // Get all elements with class="tablinks" and remove the class "active"
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-
-            // Show the current tab, and add an "active" class to the button that opened the tab
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-    </script>
+    
+        <script>
+            function calculateStrokeTextCSS(steps) {
+            var css = "";
+             for (var i = 0; i < steps; i++) {
+               var angle = (i * 2 * Math.PI) / steps;
+            var cos = Math.round(10000 * Math.cos(angle)) / 10000;
+                var sin = Math.round(10000 * Math.sin(angle)) / 10000;
+           css +=
+             "calc(var(--stroke-width) * " +
+             cos +
+             ") calc(var(--stroke-width) * " +
+           sin +
+           ") 0 var(--stroke-color),";
+      }
+    
+      return css;
+    }
+    
+        </script>
    
 </body>
 
