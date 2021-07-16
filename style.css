@@ -79,6 +79,9 @@ h4 {
   margin-bottom: 16px;
 }
 
+h6 {
+  color: var(--brown);
+}
 a p {
   
    color: var(--brown); 
