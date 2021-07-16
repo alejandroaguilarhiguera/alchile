@@ -39,7 +39,7 @@
             <div class="o-wrapper">
                 <img src="assets/logo-alchile.png" alt="Logo" class="c-hero__logo">
                 <div class="c-hero__content">
-                    <h1 class="c-hero__h1">Best Real Tasting Mexican Tacos</h1>
+                    <h1 class="c-hero__h1 stroke-single stroke-double">Best Real Tasting Mexican Tacos</h1>
                     <p class="mb-3 c-hero__copy">Order the best Mexican Tacos in Dallas</p>
                     <div>
                         <a href="order-online"><button class="button--primary">Order Online</button></a>
@@ -559,10 +559,10 @@
 
                     <ul class="c-footer__ul--row mb-4 " aria-label="ACTIONS:">
 
-                        <li><a href="#">Order online</a></li>
+                        <li><a href="order-online">Order online</a></li>
                         <li><a href="#menu">See our menu</a></li>
                         <li><a href="#">Get Directions</a></li>
-                        <li><a href="#">Make a Call</a></li>
+                        <li><a href="tel: +12143779222">Make a Call</a></li>
 
                     </ul>
 
@@ -603,6 +603,13 @@
         <br>
         <br>
     </footer>
+    <script>
+        $(function(){
+         $('.stroke-double, .stroke-single').attr('title', function(){
+       return $(this).html();
+          });
+        });
+    </script>
     <!-- actions slides -->
     <script>
         var slideIndex = 1;

@@ -198,7 +198,30 @@ h6 {
     text-shadow: 8px 7px 1px #B12C15;
   }
 }
-
+/* prepare the selectors to add a stroke to */
+.stroke-single,
+.stroke-double {
+  position: relative;
+  background: transparent;
+  z-index: 0;
+}
+/* add a single stroke */
+.stroke-single:before,
+.stroke-double:before {
+  content: attr(title);
+  position: absolute;
+  -webkit-text-stroke: 0.2em #bada55; /* Chris Coyier's favorite color! */
+  left: 0;
+  z-index: -1;
+}
+/* add a double stroke */
+.stroke-double:after {
+  content: attr(title);
+  position: absolute;
+  -webkit-text-stroke: 0.4em #778B37;
+  left: 0;
+  z-index: -2;
+}
 .c-hero__copy {
   font-size: 20px;
 }
