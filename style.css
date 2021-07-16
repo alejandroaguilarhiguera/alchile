@@ -57,13 +57,13 @@ h2 {
 
 h3 {
   margin: 0px;
-  padding-top: 32px;
+  padding-top: 28px;
   color: var(--brown);
   font-family: Fredoka One;
 }
 @media screen and (min-width: 800px) {
   h3 {
-    font-size: 40px;
+    font-size: 32px;
   }
 }
 
