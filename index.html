@@ -39,7 +39,7 @@
             <div class="o-wrapper">
                 <img src="assets/logo-alchile.png" alt="Logo" class="c-hero__logo">
                 <div class="c-hero__content">
-                    <h1 class="c-hero__h1 ">Best Real Tasting Mexican Tacos</h1>
+                    <h1 class="stroke-text smooth-16 c-hero__h1">Best Real Tasting Mexican Tacos</h1>
                     <p class="mb-3 c-hero__copy">Order the best Mexican Tacos in Dallas</p>
                     <div>
                         <a href="order-online"><button class="button--primary">Order Online</button></a>
@@ -522,8 +522,8 @@
         </div>
     </section>
     <section id="ubicacion">
-        <div class="mb-3 center">
-            <h2 >Our Location </h2>
+        <div class="center mb-3">
+            <h2 class=" stroke-text smooth-16 ">Our Location </h2>
         </div>
         <div>
             <div class="o-wrapper center o-section__gap">
@@ -668,6 +668,25 @@
             document.getElementById(cityName).style.display = "block";
             evt.currentTarget.className += " active";
         }
+    </script>
+    <script>
+        function calculateStrokeTextCSS(steps) {
+        var css = "";
+         for (var i = 0; i < steps; i++) {
+           var angle = (i * 2 * Math.PI) / steps;
+        var cos = Math.round(10000 * Math.cos(angle)) / 10000;
+            var sin = Math.round(10000 * Math.sin(angle)) / 10000;
+       css +=
+         "calc(var(--stroke-width) * " +
+         cos +
+         ") calc(var(--stroke-width) * " +
+       sin +
+       ") 0 var(--stroke-color),";
+  }
+
+  return css;
+}
+
     </script>
    
 </body>
