@@ -191,12 +191,19 @@ h6 {
 
 .c-hero__h1 {
   font-family: "Fredoka One", cursive;
-  font-size: 38px;
+  font-size: 32px;
   color: #fff;
   margin: 0;
   padding: 0;
   
   margin-bottom: 8px;
+}
+
+@media screen and (min-width: 360px) {
+  .c-hero__h1 {
+    font-size: 38px;
+    
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -230,12 +237,22 @@ h6 {
 }
 
 .c-hero__logo {
-  width: 91px;
-  height: 104px;
+  width: 104;
+  height: 119px;
   position: absolute;
   top: 0px;
   z-index: 2;
 }
+@media screen and (min-width: 768px) {
+.c-hero__logo {
+  width: 128;
+  height: 147px;
+  position: absolute;
+  top: 0px;
+  z-index: 2;
+}
+}
+
 /*  Menu */
 .c-menu {
   border: 8px var(--green);
